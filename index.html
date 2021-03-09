@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercises 04</title>
+</head>
+<body>
+    <label>Q1 Character is in Uppercase or Lowercase</label>
+        <input type="text" id="upperlower" placeholder="Enter a Character">
+        <input type="button" value="Check" onclick="UpperLower()">
+        <span id="UpperLowerShow"></span>
+    <hr>
+    <label>Q2 Week Day</label>
+        <input type="number" id="weekday" placeholder="Enter a Number from 0-6">
+        <input type="button" value="Show" onclick="WeekDay()">
+        <span id="WeekDayShow"></span>
+        <span id="TodayWeekDayShow"></span>
+    <hr>
+    <label>Q3 Month Day</label>
+        <input type="number" id="monthday" placeholder="Enter a Number from 0-11">
+        <input type="button" value="Show" onclick="MonthDay()">
+        <span id="MonthDayShow"></span>
+        <span id="TodayMonthDayShow"></span>
+    <hr>
+    <label>Q4 Total Number of Notes</label>
+        <input type="number" id="notes" placeholder="Enter Your Amount">
+        <input type="button" value="Count" onclick="Notes()">
+        <span id="NotesShow"></span>
+    <hr>
+    <label>Q5 Angles for a Triangle</label>
+        <input type="number" id="angles1" placeholder="Enter 1st Angle">
+        <input type="number" id="angles2" placeholder="Enter 2nd Angle">
+        <input type="number" id="angles3" placeholder="Enter 3rd Angle">
+        <input type="button" value="Check" onclick="Angles()">
+        <span id="AnglesShow"></span>
+    <hr>
+    <label>Q6 Sides of a Triangle</label>
+        <input type="number" id="sides1" placeholder="Enter 1st Sides Length">
+        <input type="number" id="sides2" placeholder="Enter 2nd Sides Length">
+        <input type="number" id="sides3" placeholder="Enter 3rd Sides Length">
+        <input type="button" value="Check" onclick="Sides()">
+        <span id="SidesShow"></span>
+    <hr>
+    <label>Q7 Equilateral, Isosceles and Scalene Triangle</label>
+        <input type="number" id="vectors1" placeholder="Enter 1st Vector">
+        <input type="number" id="vectors2" placeholder="Enter 2nd Vector">
+        <input type="number" id="vectors3" placeholder="Enter 3rd Vector">
+        <input type="button" value="Check" onclick="Vectors()">
+        <span id="VectorsShow"></span>
+    <hr>
+    <label>Q8 Roots of a Quadratic Equation</label>
+        <input type="number" id="roots1" placeholder="Enter 1st Root">
+        <input type="number" id="roots2" placeholder="Enter 2nd Root">
+        <input type="number" id="roots3" placeholder="Enter 3rd Root">
+        <input type="button" value="Find" onclick="Roots()">
+        <span id="RootsShow"></span>
+    <hr>
+    <label>Q9 Profit Loss Calculator</label>
+        <input type="number" id="profitloss1" placeholder="Enter Amount">
+        <input type="number" id="profitloss2" placeholder="Enter Profit in 1-100%">
+        <input type="number" id="profitloss3" placeholder="Enter Loss in 1-100%">
+        <input type="button" value="Calculate" onclick="ProfitLoss()">
+        <span id="ProfitLossShow"></span>
+    <hr>
+    <label>Q10 Search Of a Character</label>
+        <input type="text" id="searchchar1" placeholder="Enter String">
+        <input type="text" id="searchchar2" placeholder="Enter Character">
+        <input type="button" value="Search" onclick="SearchChar()">
+        <span id="SearchCharShow"></span>
+    <hr>
+    <label>Q11 Count Of a Character</label>
+        <input type="text" id="countchar1" placeholder="Enter String">
+        <input type="text" id="countchar2" placeholder="Enter Character">
+        <input type="button" value="Count" onclick="CountChar()">
+        <span id="CountCharShow"></span>
+    <hr>
+    <label>Q12 Maximum Frequent Character in a String</label>
+        <input type="text" id="maxfre" placeholder="Enter String">
+        <input type="button" value="Find" onclick="MaxFre()">
+        <p id="MaxFreShow1"></p>
+        <p id="MaxFreShow2"></p>
+    <hr>
+    <label>Q13 Mimimum Frequent Character in a String</label>
+        <input type="text" id="minfre" placeholder="Enter String">
+        <input type="button" value="Find" onclick="MinFre()">
+        <p id="MinFreShow1"></p>
+        <p id="MinFreShow2"></p>
+    <hr>
+    <label>Q14 Total Frequent of Each Character in a String</label>
+        <input type="text" id="totalfre" placeholder="Enter String">
+        <input type="button" value="Count" onclick="TotalFre()">
+        <p id="TotalFreShow"></p>
+    <hr>
+    <label>Q15 Remove First Character in a String</label>
+        <input type="text" id="removefirst" placeholder="Enter String">
+        <input type="button" value="Remove" onclick="RemoveFirst()">
+        <span id="RemoveFirstShow"></span>
+    <hr>
+    <label>Q16 Remove Last Character in a String</label>
+        <input type="text" id="removelast" placeholder="Enter String">
+        <input type="button" value="Remove" onclick="RemoveLast()">
+        <span id="RemoveLastShow"></span>
+    <hr>
+    <label>Q17 Remove All Character in a String</label>
+        <input type="text" id="removeall" placeholder="Enter String">
+        <input type="button" value="Remove" onclick="RemoveAll()">
+        <span id="RemoveAllShow"></span>
+    <hr>
+    <label>Q18 Remove All Repeated Character in a String</label>
+        <input type="text" id="removeallrepeat" placeholder="Enter String">
+        <input type="button" value="Remove" onclick="RemoveAllRepeat()">
+        <span id="RemoveAllRepeatShow"></span>
+    <hr>
+    <label>Q19 Replace First Occurence of a Character with another in a String</label>
+        <input type="text" id="replacefirst" placeholder="Enter String">
+        <input type="button" value="Replace" onclick="ReplaceFirst()">
+        <span id="ReplaceFirstShow"></span>
+    <hr>
+    <label>Q20 Replace Last Occurence of a Character with another in a String</label>
+        <input type="text" id="replacelast" placeholder="Enter String">
+        <input type="button" value="Replace" onclick="ReplaceLast()">
+        <span id="ReplaceLastShow"></span>
+    <hr>
+    <label>Q21 Replace All Occurence of a Character with another in a String</label>
+        <input type="text" id="replaceall" placeholder="Enter String">
+        <input type="button" value="Replace" onclick="ReplaceAll()">
+        <span id="ReplaceAllShow"></span>
+    <hr>
+    <label>Q22 Find First Occurence of a Word in a given String</label>
+        <span id="FirstWordString"></span>
+        <input type="button" value="Find" onclick="FirstWord()">
+        <span id="FirstWordShow"></span>
+    <hr>
+    <label>Q23 Find Last Occurence of a Word in a given String</label>
+        <span id="LastWordString"></span>
+        <input type="button" value="Find" onclick="LastWord()">
+        <span id="LastWordShow"></span>
+    <hr>
+    <label>Q24 Search All Occurences of a Word in a given String</label>
+        <span id="AllWordString"></span>
+        <input type="number" id="allword" placeholder="Enter from 1-3">
+        <input type="button" value="Search" onclick="AllWord()">
+        <span id="AllWordShow"></span>
+    <hr>
+    <label>Q25 Count All Occurences of a Word in a given String</label>
+        <span id="CountWordString"></span>
+        <input type="button" value="Count" onclick="CountWord()">
+        <span id="CountWordShow"></span>
+    <hr>
+    <label>Q26 Remove First Occurence of a Word in a given String</label>
+        <span id="FirstRemoveString"></span>
+        <input type="button" value="Remove" onclick="FirstRemove()">
+        <span id="FirstRemoveShow"></span>
+    <hr>
+    <label>Q27 Remove Last Occurence of a Word in a given String</label>
+        <span id="LastRemoveString"></span>
+        <input type="button" value="Remove" onclick="LastRemove()">
+        <span id="LastRemoveShow"></span>
+    <hr>
+    <label>Q28 Remove All Occurences of a Word in a given String</label>
+        <span id="RemoveAllWordString"></span>
+        <input type="number" id="removeallword" placeholder="Enter from 1-3">
+        <input type="button" value="Remove" onclick="RemoveAllWord()">
+        <span id="RemoveAllWordShow"></span>
+    <hr>
+    <label>Q29 Trim Leading White Space Characters from given String</label>
+        <span id="TrimLeadingString"></span>
+        <input type="button" value="Trim" onclick="TrimLeading()">
+        <span id="TrimLeadingShow"></span>
+    <hr>
+    <label>Q30 Trim Trailing White Space Characters from given String</label>
+        <span id="TrimTrailingString"></span>
+        <input type="button" value="Trim" onclick="TrimTrailing()">
+        <span id="TrimTrailingShow"></span>
+    <hr>
+    <label>Q31 Trim Both White Space Characters from given String</label>
+        <span id="TrimBothString"></span>
+        <input type="button" value="Trim" onclick="TrimBoth()">
+        <span id="TrimBothShow"></span>
+    <hr>
+    <label>Q32 Remove All Extra Blank Spaces Characters from given String</label>
+        <span id="ExtraBlankSpaceString"></span>
+        <input type="button" value="Remove" onclick="ExtraBlankSpace()">
+        <span id="ExtraBlankSpaceShow"></span>
+    <hr>
+    <label>Q33 Count Frequency of each Element in an Array</label>
+        <p id="CountFreString"></p>
+        <input type="text" id="countfre" placeholder="Keep Entering Array Element">
+        <input type="button" value="Count" onclick="CountFre()">
+        <p id="CountFreShow"></p>
+    <hr>
+    <label>Q34 Print All Unique Elements in an Array</label>
+        <p id="UniqueString"></p>
+        <input type="text" id="unique" placeholder="Keep Entering Array Element">
+        <input type="button" value="Print" onclick="Unique()">
+        <p id="UniqueShow"></p>
+    <hr>
+    <label>Q35 Count All Duplicate Elements in an Array</label>
+        <p id="DuplicateString"></p>
+        <input type="text" id="duplicate" placeholder="Keep Entering Array Element">
+        <input type="button" value="Count" onclick="Duplicate()">
+        <p id="DuplicateShow"></p>
+    <hr>
+    <label>Q36 Delete All Duplicate Elements in an Array</label>
+        <p id="DeleteDuplicateString"></p>
+        <input type="text" id="deleteduplicate" placeholder="Keep Entering Array Element">
+        <input type="button" value="Delete" onclick="DeleteDuplicate()">
+        <p id="DeleteDuplicateShow"></p>
+    <hr>
+    <label>Q37 Merge 2 Arrays to 3rd Array</label>
+        <br>
+        <input type="text" id="mergeArray1" placeholder="Keep Entering Array Element">
+        <input type="button" value="Print 1st Array" onclick="MergeArray1()">
+        <span id="MergeArray1String"></span>
+        <br>
+        <input type="text" id="mergeArray2" placeholder="Keep Entering Array Element">
+        <input type="button" value="Print 2nd Array" onclick="MergeArray2()">
+        <span id="MergeArray2String"></span>
+        <br>
+        <input type="button" value="Merge" onclick="Merge()">
+        <span id="MergeArrayShow"></span>
+    <hr>
+    <label>Q38 Reverse of An Array</label>
+        <input type="text" id="reverseArray" placeholder="Keep Entering Array Element">
+        <input type="button" value="Reverse" onclick="ReverseArray()">
+        <p id="ReverseArrayString"></p>
+        <p id="ReverseArrayShow"></p>
+    <hr>
+    <label>Q39 Even and Odd Elements in Seperate Arrays</label>
+        <input type="number" id="evenOdd" placeholder="Keep Entering Array Element">
+        <input type="button" value="Put" onclick="EvenOdd()">
+        <p id="EvenOddString"></p>
+        <p id="EvenOddShow1"></p>
+        <p id="EvenOddShow2"></p>
+    <hr>
+    <label>Q40 Search an Eements in an Array</label>
+        <span id="SearchString"></span>
+        <input type="text" id="search" placeholder="Keep Entering Array Element">
+        <input type="button" value="Search" onclick="Search()">
+        <span id="SearchShow"></span>
+    <hr>
+    <label>Q41 Sort Array Elements in Ascending or Descending Order</label>
+        <span id="ArrayString"></span><br>
+        <input type="button" value="Ascending" onclick="AscendingArray()">
+        <span id="AscendingArrayShow"></span><br>
+        <input type="button" value="Descending" onclick="DescendingArray()">
+        <span id="DescendingArrayShow"></span>
+    <hr>
+    <label>Q42 Sort Even and Odd Elements of Array Separately</label>
+        <span id="NumberString"></span><br>
+        <input type="button" value="Even Sort" onclick="EvenArray()">
+        <span id="EvenArrayShow"></span><br>
+        <input type="button" value="Odd Sort" onclick="OddArray()">
+        <span id="OddArrayShow"></span>
+    <hr>
+    <label>Q43 Left Rotate an Array</label>
+        <span id="LeftRotateArrayString"></span>
+        <input type="button" value="Rotate Left" onclick="LeftRotateArray()">
+        <span id="LeftRotateArrayShow"></span>
+    <hr>
+    <label>Q44 Right Rotate an Array</label>
+        <span id="RightRotateArrayString"></span>
+        <input type="button" value="Rotate Right" onclick="RightRotateArray()">
+        <span id="RightRotateArrayShow"></span>
+    <hr>
+    <label>Q45 Sum of All Natural Numbers Between 1 to N</label>
+        <input type="number" id="naturalnumber" placeholder="Enter the Nth Number">
+        <input type="button" value="Sum" onclick="NaturalNumbers()">
+        <span id="NaturalNumbersShow"></span>
+    <hr>
+    <label>Q46 Sum of All Even Natural Numbers Between 1 to N</label>
+        <input type="number" id="evennaturalnumber" placeholder="Enter the Nth Number">
+        <input type="button" value="Sum" onclick="EvenNaturalNumbers()">
+        <span id="EvenNaturalNumbersShow"></span>
+    <hr>
+    <label>Q47 Sum of All Odd Natural Numbers Between 1 to N</label>
+        <input type="number" id="oddnaturalnumber" placeholder="Enter the Nth Number">
+        <input type="button" value="Sum" onclick="OddNaturalNumbers()">
+        <span id="OddNaturalNumbersShow"></span>
+    <hr>
+    <label>Q48 Print Multiplication Table of any Number</label>
+        <input type="number" id="table" placeholder="Enter the Nth Number">
+        <input type="button" value="Print" onclick="Tables()">
+        <span id="TablesShow"></span>
+    <hr>
+    <label>Q49 Count Number of Digits in a Number</label>
+        <input type="number" id="digit" placeholder="Enter the Nth Number">
+        <input type="button" value="Count" onclick="Digits()">
+        <span id="DigitsShow"></span>
+    <hr>
+    <label>Q50 Find First and Last Digit of a Number</label>
+        <input type="number" id="firstandlastdigit" placeholder="Enter the Nth Number">
+        <input type="button" value="Find" onclick="FirstandLastDigits()">
+        <span id="FirstandLastDigitsShow"></span>
+    <hr>
+    <label>Q51 Find Sum of First and Last Digit of a Number</label>
+        <input type="number" id="sumoffirstandlastdigit" placeholder="Enter the Nth Number">
+        <input type="button" value="Find" onclick="SumofFirstandLastDigits()">
+        <span id="SumofFirstandLastDigitsShow"></span>
+    <hr>
+    <label>Q52 Swap First and Last Digits of a Number</label>
+        <input type="number" id="swapfirstandlastdigit" placeholder="Enter the Nth Number">
+        <input type="button" value="Find" onclick="SwapFirstandLastDigits()">
+        <span id="SwapFirstandLastDigitsShow"></span>
+    <hr>
+    <label>Q53 Calculate Sum of Digits of a Number</label>
+        <input type="number" id="sumofdigit" placeholder="Enter the Nth Number">
+        <input type="button" value="Find" onclick="SumOfDigits()">
+        <span id="SumOfDigitsShow"></span>
+    <hr>
+    <label>Q53 Calculate Multiply of Digits of a Number</label>
+        <input type="number" id="Multiplyofdigit" placeholder="Enter the Nth Number">
+        <input type="button" value="Find" onclick="MultiplyOfDigits()">
+        <span id="MultiplyOfDigitsShow"></span>
+    <hr>
+    
+
+
+<script src="./16th Assignment JS Exercises 04.js"></script>
+</body>
+</html>
